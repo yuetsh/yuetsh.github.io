@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://im.yueyue.work/"/>
-  <updated>2016-08-09T06:01:52.000Z</updated>
+  <updated>2016-08-09T12:07:20.000Z</updated>
   <id>https://im.yueyue.work/</id>
   
   <author>
@@ -16,11 +16,51 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>learn-ng2</title>
+    <title>修改UI</title>
+    <link href="https://im.yueyue.work/2016/08/09/modify-page-ui/"/>
+    <id>https://im.yueyue.work/2016/08/09/modify-page-ui/</id>
+    <published>2016-08-09T12:00:32.000Z</published>
+    <updated>2016-08-09T12:07:20.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>记录给自己看，怕忘了。。。</p>
+<ol>
+<li><p>在yue分支上修改UI源代码</p>
+</li>
+<li><p>git push (gp)</p>
+</li>
+<li><p>在网站项目中 cd themes/hexo-theme-apollo</p>
+</li>
+<li><p>git pull (gl)</p>
+</li>
+<li><p>hexo d -g (hdg)</p>
+</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;记录给自己看，怕忘了。。。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;在yue分支上修改UI源代码&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;git push (gp)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在网站项目中 cd themes/hexo-theme-apollo&lt;/p&gt;
+&lt;/li&gt;
+    
+    </summary>
+    
+    
+      <category term="记录" scheme="https://im.yueyue.work/tags/%E8%AE%B0%E5%BD%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>学习angular2</title>
     <link href="https://im.yueyue.work/2016/08/09/learn-ng2/"/>
     <id>https://im.yueyue.work/2016/08/09/learn-ng2/</id>
     <published>2016-08-09T05:55:16.000Z</published>
-    <updated>2016-08-09T06:01:52.000Z</updated>
+    <updated>2016-08-09T12:03:38.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="angular2的学习资料"><a href="#angular2的学习资料" class="headerlink" title="angular2的学习资料:"></a>angular2的学习资料:</h2><ol>
 <li><p><a href="https://angular.io/" target="_blank" rel="external">官网</a></p>
@@ -70,10 +110,10 @@
   
   <entry>
     <title>开启https</title>
-    <link href="https://im.yueyue.work/2016/08/02/%E5%BC%80%E5%90%AFhttps/"/>
-    <id>https://im.yueyue.work/2016/08/02/开启https/</id>
+    <link href="https://im.yueyue.work/2016/08/02/add-https/"/>
+    <id>https://im.yueyue.work/2016/08/02/add-https/</id>
     <published>2016-08-02T02:10:36.000Z</published>
-    <updated>2016-08-02T08:43:00.000Z</updated>
+    <updated>2016-08-09T12:03:29.000Z</updated>
     
     <content type="html"><![CDATA[<p>现在这个站点已经开启了https，顺心多了。<br>另外.moe的站点也是开启了https，但是不知道为什么，有提示是不安全的。。。</p>
 <a id="more"></a>
@@ -93,10 +133,10 @@
   
   <entry>
     <title>qiniu-sync和deployer-git插件冲突</title>
-    <link href="https://im.yueyue.work/2016/08/02/qiniu-sync%E5%92%8Cdeployer-git%E6%8F%92%E4%BB%B6%E5%86%B2%E7%AA%81/"/>
-    <id>https://im.yueyue.work/2016/08/02/qiniu-sync和deployer-git插件冲突/</id>
+    <link href="https://im.yueyue.work/2016/08/02/qiniu-sync-is-conflicted-with-deployer-git/"/>
+    <id>https://im.yueyue.work/2016/08/02/qiniu-sync-is-conflicted-with-deployer-git/</id>
     <published>2016-08-02T01:26:34.000Z</published>
-    <updated>2016-08-02T08:43:08.000Z</updated>
+    <updated>2016-08-09T12:03:04.000Z</updated>
     
     <content type="html"><![CDATA[<p>hexo-qiniu-sync 插件好像和 hexo-deployer-git 有冲突，安装完七牛同步之后不能hexo d -g了。</p>
 ]]></content>
