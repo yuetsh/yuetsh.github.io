@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://im.yueyue.work/"/>
-  <updated>2016-08-22T14:39:57.000Z</updated>
+  <updated>2016-08-22T14:43:33.000Z</updated>
   <id>https://im.yueyue.work/</id>
   
   <author>
@@ -20,50 +20,53 @@
     <link href="https://im.yueyue.work/2016/08/22/lodash-note/"/>
     <id>https://im.yueyue.work/2016/08/22/lodash-note/</id>
     <published>2016-08-22T13:20:28.000Z</published>
-    <updated>2016-08-22T14:39:57.000Z</updated>
+    <updated>2016-08-22T14:43:33.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="这里纪录lodash里面一些最常用函数的使用"><a href="#这里纪录lodash里面一些最常用函数的使用" class="headerlink" title="这里纪录lodash里面一些最常用函数的使用"></a>这里纪录lodash里面一些最常用函数的使用</h2><p>lodash 已经算是我在任何项目都必须加入的东西，不管是前端还是后端项目，它带来的便利性很大，而且很方便，导致现在我用原生js写数组/字符串之类的已经是不会写了，这是好事还是坏事呢？</p>
 <a id="more"></a>
 <p>这里的文档是<code>~4</code>版本</p>
 <p>按照文档中的顺序一个个来：</p>
 <h2 id="Array-数组操作"><a href="#Array-数组操作" class="headerlink" title="Array 数组操作"></a>Array 数组操作</h2><blockquote>
-<p>_.concat</p>
+<p><code>_.concat</code></p>
 </blockquote>
 <p>连接数组，不改变原数组</p>
 <blockquote>
-<p>_.indexOf</p>
+<p><code>_.indexOf</code></p>
 </blockquote>
 <p>找下标，一般做有无判断</p>
-<p>如果被找的是数组，直接 <code>_.indexOf([1, 2, 3, 4, 5, 6], item) &lt; 0</code>，如果被找的是对象，匹配的是对象的值，用_.values搭配</p>
+<p>如果被找的是数组，直接 <code>_.indexOf([1, 2, 3, 4, 5, 6], item) &lt; 0</code>，如果被找的是对象，匹配的是对象的值，用 <code>_.values</code> 搭配</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> obj = &#123;</div><div class="line">    NOT_OPEN: <span class="number">100</span>, </div><div class="line">    NOT_STARTED: <span class="number">200</span>,</div><div class="line">    WIP: <span class="number">300</span>,</div><div class="line">    ENDED: <span class="number">400</span></div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="keyword">var</span> status = <span class="number">100</span>;</div><div class="line"></div><div class="line"><span class="keyword">if</span> (_.indexOf(_.values(obj), status) &lt; <span class="number">0</span>) &#123;</div><div class="line">    <span class="comment">// 没有</span></div><div class="line">&#125; <span class="keyword">else</span> &#123;</div><div class="line">    <span class="comment">// 有</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>记住 &lt; 0 为 true 是没有</p>
 <blockquote>
-<p>_.uniq</p>
+<p><code>_.uniq</code></p>
 </blockquote>
 <p>去重，初始化数据的时候可以用</p>
 <h2 id="Collection-集合-Array-Object"><a href="#Collection-集合-Array-Object" class="headerlink" title="Collection 集合(Array|Object)"></a>Collection 集合(Array|Object)</h2><blockquote>
-<p>_.filter</p>
+<p><code>_.filter</code></p>
 </blockquote>
 <p>一般 <code>_.filter(Boo)</code> 用于去空，和 <code>_.remove</code> 不同点在于： <code>_.remove</code> 是改变原数组的，<code>_.filter</code> 不改变原数组，需要最后赋值给新数组</p>
 <blockquote>
-<p>_.forEach</p>
+<p><code>_.forEach</code></p>
 </blockquote>
 <p>没有返回值</p>
 <blockquote>
-<p>_.map</p>
+<p><code>_.map</code></p>
 </blockquote>
 <p>有返回值</p>
 <blockquote>
-<p>_.reduce</p>
-<p>_.sample</p>
+<p><code>_.reduce</code></p>
+</blockquote>
+<p>有三个参数，别忘了最后一个起始值</p>
+<blockquote>
+<p><code>_.sample</code></p>
 </blockquote>
 <p>集合里面随机取一个值</p>
 <blockquote>
-<p>_.shuffle</p>
+<p><code>_.shuffle</code></p>
 </blockquote>
 <p>打乱顺序</p>
 <blockquote>
-<p>_.sortBy</p>
+<p><code>_.sortBy</code></p>
 </blockquote>
 ]]></content>
     
