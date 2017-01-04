@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://im.yueyue.work/"/>
-  <updated>2017-01-04T09:56:47.000Z</updated>
+  <updated>2017-01-04T10:20:27.000Z</updated>
   <id>https://im.yueyue.work/</id>
   
   <author>
@@ -20,12 +20,32 @@
     <link href="https://im.yueyue.work/2017/01/04/learn-js/"/>
     <id>https://im.yueyue.work/2017/01/04/learn-js/</id>
     <published>2017-01-04T09:56:47.000Z</published>
-    <updated>2017-01-04T09:56:47.000Z</updated>
+    <updated>2017-01-04T10:20:27.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="arguments"><a href="#arguments" class="headerlink" title="arguments"></a>arguments</h3><p>类数组对象，是指function中的参数列表</p>
+<p>除了length，没有数组的其他属性</p>
+<p>可以通过以下手段变成数组</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> args = <span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>);</div><div class="line"><span class="keyword">var</span> args = [].slice.call(<span class="built_in">arguments</span>);</div><div class="line"><span class="keyword">var</span> args = <span class="built_in">Array</span>.from(<span class="built_in">arguments</span>);</div><div class="line"><span class="keyword">var</span> args = [...arguments];</div></pre></td></tr></table></figure>
+<h3 id="apply和call"><a href="#apply和call" class="headerlink" title="apply和call"></a>apply和call</h3><p>函数调用除了声明时定义的形参外，还会自动添加 2 个形参，分别是<code>this</code>和<code>arguments</code>。</p>
+<p>apply和call的使用：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span>  numbers = [<span class="number">5</span>, <span class="number">458</span> , <span class="number">120</span> , <span class="number">-215</span> ]; </div><div class="line"><span class="keyword">var</span> maxInNumbers = <span class="built_in">Math</span>.max.apply(<span class="built_in">Math</span>, numbers),   <span class="comment">//458</span></div><div class="line">    maxInNumbers = <span class="built_in">Math</span>.max.call(<span class="built_in">Math</span>, <span class="number">5</span>, <span class="number">458</span> , <span class="number">120</span> , <span class="number">-215</span>); <span class="comment">//458</span></div></pre></td></tr></table></figure>
+<p>number本身没有max方法，但是Math有，我们就可以借助call或者apply使用其方法。</p>
+<p>也就是说apply和call作用就是借用别人的方法来调用，就像调用自己的一样。</p>
+<p>apply和call的区别：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">foo.call(<span class="keyword">this</span>, arg1, arg2, arg3) == foo.apply(<span class="keyword">this</span>, <span class="built_in">arguments</span>) == <span class="keyword">this</span>.foo(arg1, arg2, arg3)</div></pre></td></tr></table></figure>
+<p>也就是说apply和call传入的参数不一样，apply传入数组</p>
+<p>当参数明确时可用call, 当参数不明确时可用apply给定arguments。</p>
+]]></content>
     
     <summary type="html">
     
+      &lt;h3 id=&quot;arguments&quot;&gt;&lt;a href=&quot;#arguments&quot; class=&quot;headerlink&quot; title=&quot;arguments&quot;&gt;&lt;/a&gt;arguments&lt;/h3&gt;&lt;p&gt;类数组对象，是指function中的参数列表&lt;/p&gt;
+&lt;p&gt;除了length，没有数
+    
     </summary>
     
+    
+      <category term="js" scheme="https://im.yueyue.work/tags/js/"/>
     
   </entry>
   
